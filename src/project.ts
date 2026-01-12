@@ -14,6 +14,7 @@ export interface VideoConfig {
     height: number;
     fps: number;
     characterPath: string;
+    background: string;
     fontSize: number;
     scenes: SceneConfig[];
 }
