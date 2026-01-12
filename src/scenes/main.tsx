@@ -59,8 +59,6 @@ export default makeScene2D(function* (view) {
                 y={subtitlePos.y}
                 width={subtitleSpec.width}
                 height={subtitleSpec.height}
-                stroke={'#00ff00'}
-                lineWidth={4}
                 fill={'rgba(0, 0, 0, 0.7)'}
                 padding={20}
             >
@@ -83,8 +81,6 @@ export default makeScene2D(function* (view) {
                 y={videoHeight / 2}
                 offsetX={1}
                 offsetY={1}
-                stroke={'#ff0000'}
-                lineWidth={4}
             />
         </>
     );
