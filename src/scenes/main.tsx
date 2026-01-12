@@ -59,17 +59,18 @@ export default makeScene2D(function* (view) {
                 y={subtitlePos.y}
                 width={subtitleSpec.width}
                 height={subtitleSpec.height}
-                stroke={'#00ff00'}
-                lineWidth={4}
-                fill={'rgba(0, 0, 0, 0.7)'}
+                fill={config.caption.backgroundColor}
                 padding={20}
             >
                 <Txt
                     ref={subtitleTextRef}
                     text={config.scenes[0].text}
-                    fontSize={config.fontSize}
-                    fill={'#ffffff'}
-                    fontFamily={'sans-serif'}
+                    fontSize={config.caption.fontSize}
+                    fill={config.caption.color}
+                    stroke={config.caption.stroke}
+                    lineWidth={config.caption.strokeWidth}
+                    fontFamily={config.caption.fontFamily}
+                    fontWeight={config.caption.fontWeight}
                     textWrap={true}
                     width={subtitleSpec.width - 40}
                 />
@@ -83,8 +84,6 @@ export default makeScene2D(function* (view) {
                 y={videoHeight / 2}
                 offsetX={1}
                 offsetY={1}
-                stroke={'#ff0000'}
-                lineWidth={4}
             />
         </>
     );

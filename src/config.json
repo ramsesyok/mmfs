@@ -4,7 +4,15 @@
     "fps": 60,
     "characterPath": "chara_base.png",
     "background": "background.png",
-    "fontSize": 48,
+    "caption": {
+        "fontSize": 48,
+        "fontFamily": "'Meiryo', 'sans-serif'",
+        "fontWeight": 700,
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "#000000",
+        "stroke": "#ffffff",
+        "strokeWidth": 2
+    },
     "scenes": [
         {
             "slidePath": "slide01.png",
