@@ -1,0 +1,19 @@
+{
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "characterPath": "chara_base.png",
+    "fontSize": 48,
+    "scenes": [
+        {
+            "slidePath": "slide01.png",
+            "voicePath": "voice01.wav",
+            "text": "こんにちは、今日はRevideoの解説をします。"
+        },
+        {
+            "slidePath": "slide02.png",
+            "voicePath": "voice02.wav",
+            "text": "この動画は、JSONで設定されていますよ。"
+        }
+    ]
+}

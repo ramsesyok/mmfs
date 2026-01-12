@@ -1,0 +1,25 @@
+{
+  "name": "mmfs-video-engine",
+  "version": "1.0.0",
+  "description": "JSON-driven video generation engine using Revideo",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@revideo/2d": "^1.6.0",
+    "@revideo/core": "^1.6.0",
+    "@revideo/ui": "^1.6.0",
+    "@revideo/vite-plugin": "^1.6.0",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3",
+    "vite": "^4.5.5"
+  },
+  "dependencies": {
+    "chroma-js": "^2.4.2"
+  }
+}
