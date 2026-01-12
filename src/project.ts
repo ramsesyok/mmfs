@@ -15,7 +15,15 @@ export interface VideoConfig {
     fps: number;
     characterPath: string;
     background: string;
-    fontSize: number;
+    caption: {
+        fontSize: number;
+        fontFamily: string;
+        fontWeight: number;
+        backgroundColor: string;
+        color: string;
+        stroke: string;
+        strokeWidth: number;
+    };
     scenes: SceneConfig[];
 }
 
