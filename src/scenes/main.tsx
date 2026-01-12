@@ -1,4 +1,4 @@
-import { makeScene2D, Img, Rect, Txt, Audio } from '@revideo/2d';
+import { makeScene2D, Img, Rect, Txt, Audio, Layout } from '@revideo/2d';
 import { createRef, waitFor } from '@revideo/core';
 import { config } from '../project';
 
@@ -75,14 +75,14 @@ export default makeScene2D(function* (view) {
                 />
             </Rect>
 
-            {/* Character - top layer with red border */}
+            {/* Character - top layer, positioned at bottom-right */}
             <Img
                 ref={characterRef}
                 src={`/${config.characterPath}`}
-                x={characterPos.x}
-                y={characterPos.y}
-                width={characterSpec.width}
-                height={characterSpec.height}
+                x={videoWidth / 2}
+                y={videoHeight / 2}
+                offsetX={1}
+                offsetY={1}
                 stroke={'#ff0000'}
                 lineWidth={4}
             />
