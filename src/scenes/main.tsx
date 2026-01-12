@@ -30,10 +30,19 @@ export default makeScene2D(function* (view) {
     const subtitleTextRef = createRef<Txt>();
     const characterRef = createRef<Img>();
 
-    // Add components to view with proper layering (slide → subtitle → character)
+    // Add components to view with proper layering (background → slide → subtitle → character)
     view.add(
         <>
-            {/* Slide background - bottom layer */}
+            {/* Background - bottom-most layer (centered at origin) */}
+            <Img
+                src={`/${config.background}`}
+                x={0}
+                y={0}
+                width={videoWidth}
+                height={videoHeight}
+            />
+
+            {/* Slide background - second layer */}
             <Img
                 ref={slideRef}
                 src={`/${config.scenes[0].slidePath}`}

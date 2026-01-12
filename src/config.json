@@ -3,6 +3,7 @@
     "height": 1080,
     "fps": 60,
     "characterPath": "chara_base.png",
+    "background": "background.png",
     "fontSize": 48,
     "scenes": [
         {
